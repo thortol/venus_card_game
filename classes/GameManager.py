@@ -1,6 +1,6 @@
 class GameManager:
     '''
-    Contains everything for the game to run example deck field etc
+    Contains all the games being run at the same time like a main server
     '''
     def __init__(self):
         pass
