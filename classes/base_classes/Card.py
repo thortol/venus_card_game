@@ -1,4 +1,4 @@
-import GameObject
+from classes import GameObject
 
 class Card(GameObject):
     '''
