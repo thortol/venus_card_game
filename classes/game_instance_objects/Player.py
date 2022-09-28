@@ -5,7 +5,7 @@ class Player(GameObject):
     Player contains the health and mana of the player
     '''
     def __init__(self):
-        pass
+        super().__init__()
 
     def get_display(self):
         '''

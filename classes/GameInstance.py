@@ -25,6 +25,7 @@ class GameInstance:
         info["field"] = self.fields[id].get_display()
         info["hand"] = self.hands[id].get_display()
         info["player"] = self.players[id].get_display()
+        return info
 
     
     def get_other_player(self, id):
