@@ -2,6 +2,7 @@
 File that contains all the 'magic numbers' used in the script
 '''
 WINDOW_SIZE = [1000,1000]
+CARD_SIZE = [120,150]
 COLORS = {
     "azure":(240,255,255),
     "blue":(0,0,255),

@@ -1,6 +1,7 @@
 import pygame
 
 from GlobalVariables import *
+from classes import Card
 
 class MainController:
     '''
@@ -9,6 +10,7 @@ class MainController:
     def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode(WINDOW_SIZE)
+        self.card = Card()
     
     def handle_event(self):
         '''
@@ -20,5 +22,8 @@ class MainController:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return False
+            if event.type == pygame.MOUSEBUTTONUP:
+                self.card.click_and_check_if_clicked(pygame.mouse.get_pos())
+        self.screen.blit(self.card.sprite, self.card.dest)
         pygame.display.flip()
         return True
